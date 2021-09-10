@@ -1,13 +1,222 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
 }
+
+.form-container {
+	height: 100vh;
+	width: 40vw;
+}
+
+.inner-container {
+	padding: 40px 70px;
+}
+
+.main-title {
+	font-weight: 600;
+}
+
+.googleBtn {
+	width: 13vw;
+}
+
+.bgImg {
+	height: 100vh;
+	width: 60vw;
+}
+
+.main-title {
+	display: inline;
+}
+
+.signintxt {
+	font-weight: 600;
+}
+
+.createbtn {
+	color: #92400e;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.signIn-Opn {
+	margin: 50px 0;
+	position: relative;
+}
+.signIn-Opn span {
+	top: 30px;
+}
+.signIn-Opn .google {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+}
+
+.signIn-Opn .google button {
+	text-align: center;
+	height: 2rem;
+	width: 10rem;
+	background-color: white;
+	border: #070707;
+	border-radius: 10px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.signIn-Opn .google button img {
+	width: 20px;
+	height: 20px;
+	box-sizing: content-box;
+	padding-right: 10px;
+}
+
+.signIn-Opn .github {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.signIn-Opn .github button {
+	text-align: center;
+	height: 2rem;
+	width: 10rem;
+	background-color: white;
+	border: #070707;
+	border-radius: 10px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.signIn-Opn .github button img {
+	width: 20px;
+	height: 20px;
+	box-sizing: content-box;
+	padding-right: 10px;
+}
+
+.hrtxt {
+	line-height: 1em;
+	position: relative;
+	outline: 0;
+	border: 0;
+	color: black;
+	text-align: center;
+	height: 1.5em;
+	opacity: 0.5;
+}
+
+.hrtxt:before {
+	content: "";
+	background: #818078;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 1px;
+}
+
+.hrtxt:after {
+	content: attr(data-content);
+	position: relative;
+	display: inline-block;
+	padding: 0 0.5em;
+	line-height: 1.5em;
+	color: #444444;
+	background-color: #fcfcfa;
+}
+form label {
+	display: block;
+	color: #757373;
+	font-size: 18px;
+}
+form input[type="email"],
+input[type="password"],
+input[type="submit"] {
+	width: 25rem;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border: black;
+	outline: none;
+	line-height: 1.5rem;
+	height: 2rem;
+	cursor: pointer;
+}
+form input[type="checkbox"] {
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border: black;
+	cursor: pointer;
+}
+.forgetLink {
+	color: #92400e;
+	margin: 0 0 0 70px;
+	text-decoration: none;
+	font-weight: 600;
+	cursor: pointer;
+}
+form input[type="submit"] {
+	background-color: #92400e;
+	font-weight: 600;
+	color: #fcfcfa;
+}
+form input[type="email"]::placeholder {
+	padding-left: 10px;
+}
+
+@media only screen and (max-width: 1157px) {
+	.container {
+		display: block;
+	}
+	.bgImg {
+		display: none;
+	}
+	.form-container {
+		width: 100%;
+		height: 100%;
+	}
+}
+@media only screen and (max-width: 470px) {
+	.container {
+		display: block;
+	}
+	.bgImg {
+		display: none;
+	}
+	.form-container {
+		width: 100%;
+		height: 100%;
+	}
+	.signIn-Opn .github button {
+		width: 20px;
+	}
+	.signIn-Opn .google button {
+		width: 20px;
+	}
+}
+/*# sourceMappingURL=index.css.map */
